@@ -8,6 +8,7 @@ class RandomStuff:
 
     @commands.command(pass_context=True)
     async def furry(self, context):
+        """Does something odd."""
         await self.bot.send_file(context.message.channel, '{}furry.png'.format(self.base))
 
 def setup(bot):
